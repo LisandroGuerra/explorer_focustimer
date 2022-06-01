@@ -3,9 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pomodoro timer style">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Palanquin&family=Roboto:wght@700&family=Staatliches&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
     <title>FocusTimer - Pomodoro</title>
 </head>
 
@@ -17,16 +29,28 @@
             <span class="seconds">00</span>
         </div>
         <div id="controls">
-            <button class="play"></button>
-            <button class="pause"></button>
-            <button class="stop"></button>
-            <button class="set"></button>
+            <button class="play">
+                <i class="ph-play-circle icon"></i>
+            </button>
+            <button class="pause hide">
+                <i class="ph-pause-circle icon"></i>
+            </button>
+            <button class="stop hide">
+                <i class="ph-stop-circle icon"></i>
+            </button>
+            <button class="set">
+                <i class="ph-alarm icon"></i>
+            </button>
         </div>
     </main>
 
     <footer>
-        <button class="sound-on"></button>
-        <button class="sound-off"></button>
+        <button class="sound-on">
+            <i class="ph-speaker-high icon"></i>
+        </button>
+        <button class="sound-off hide">
+            <i class="ph-speaker-slash icon"></i>
+        </button>
     </footer>
 
 </body>
