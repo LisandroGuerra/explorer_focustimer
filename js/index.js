@@ -43,8 +43,8 @@ buttonSet.addEventListener('click', function () {
         return
     }
 
-    timer.minutesUpdate(minutes)
-    timer.displayUpdate(minutes, 0)
+    timer.minutesUpdate(newMinutes)
+    timer.displayUpdate(newMinutes, 0)
 })
 
 buttonStop.addEventListener('click', function () {
