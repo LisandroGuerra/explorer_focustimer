@@ -5,14 +5,15 @@ export default function() {
 
     bgAudio.loop
 
+
     function pressButton() {
         buttonPressAudio.play()
     }
 
+
     function timeEnd() {
         kitchenTimer.play()
     }
-
 
 
     return {
