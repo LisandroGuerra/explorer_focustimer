@@ -5,6 +5,7 @@ export default function Controls(
     buttonStop
 ) {
 
+    
     function play() {
         buttonPlay.classList.add('hide')
         buttonPause.classList.remove('hide')
