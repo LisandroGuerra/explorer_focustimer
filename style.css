@@ -5,12 +5,19 @@
 }
 
 :root {
-    --bg-color: #262626;
+    --bg-color: #505050;
     --base-color: #255C99;
     --second-color: #B6CBE2;
     --text-color: snow;
 
     font-size: 62.5%;
+}
+
+.dark:root {
+    --bg-color: #262626;
+    --base-color: #0a1a2c;
+    --second-color: #5c6874;
+    --text-color: #6a6969;
 }
 
 body {
@@ -71,8 +78,9 @@ button .icon {
 }
 
 footer {
-    align-self: end;
-    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    padding: 0 3.2rem 3.2rem 0;
+    padding: 3.2rem;
 }

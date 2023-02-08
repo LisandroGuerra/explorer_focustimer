@@ -4,7 +4,10 @@ import {
     buttonSet,
     buttonStop,
     buttonSoundOn,
-    buttonSoundOff
+    buttonSoundOff,
+    buttonDarkOn,
+    buttonDarkOff,
+    rootElement
 } from "./elements.js"
 
 
@@ -49,5 +52,17 @@ export default function({controls,timer,sound}){
         buttonSoundOff.classList.add('hide')
         buttonSoundOn.classList.remove('hide')
         sound.bgAudio.play()
+    })
+
+    buttonDarkOn.addEventListener('click', function () {
+        buttonDarkOn.classList.add('hide')
+        buttonDarkOff.classList.remove('hide')
+        rootElement.classList.remove('dark')
+    })
+
+    buttonDarkOff.addEventListener('click', function () {
+        buttonDarkOff.classList.add('hide')
+        buttonDarkOn.classList.remove('hide')
+        rootElement.classList.add('dark')
     })
 }
